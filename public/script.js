@@ -3,7 +3,7 @@ const videoGrid = document.getElementById('video-grid');
 var myPeer = new Peer(undefined,{
     host:'/',
     path:'/peer/vchat',
-    port:'3000'
+    port:process.env.PORT ? process.env.PORT : '3000'
 }); 
 
 const myVideo = document.createElement('video');
