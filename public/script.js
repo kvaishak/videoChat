@@ -2,8 +2,8 @@ const socket = io('/');
 const videoGrid = document.getElementById('video-grid');
 var myPeer = new Peer(undefined,{
     host:'/',
-    path:'/peer/vchat',
-    port:PORT_NO
+    path:'/peer/vchat'
+    // port:3000
 }); 
 
 const myVideo = document.createElement('video');
